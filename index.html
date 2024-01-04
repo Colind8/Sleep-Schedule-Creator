@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Sleep Schedule Generator</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h1>Sleep Schedule Creator</h1>
+    <h3>Tired of being tired? Annoyed at how much you sleep? Easily change how you approach sleep with this easy to use tool!</h3>
+
+    <hr></hr>
+    <p>Hours spent awake: <b id="totalawake">16</b></p>
+    <button onclick="decrease_awake()">-</button><button onclick="increase_awake()">+</button>
+
+    <p>Hours of sleep: <b id="totalsleep">8</b></p>
+    <button onclick="decrease_hours()">-</button><button onclick="increase_hours()">+</button>
+    
+    <p>Wake up at <b id="alarmtime">8:00 PM</b></p>
+    <button onclick="decrease_alarm()">-</button><button onclick="increase_alarm()">+</button>
+
+    <p>Sleep at <b id="sleeptime">12:00 AM</b></p>
+    <button onclick="decrease_sleep()">-</button><button onclick="increase_sleep()">+</button>
+
+    <br />
+    <br />
+
+    <a href="https://www.cdc.gov/sleep/about_sleep/how_much_sleep.html">CDC reccomended hours of sleep</a>
+    <table cellspacing="0" cellpadding="3">
+        <thead>
+<tr>
+<th colspan="2" scope="col" bgcolor="#c1d5b0">Age Group</th>
+<th scope="col" bgcolor="#c1d5b0">Recommended Hours of Sleep Per Day</th>
+</tr>
+        </thead>
+        <tbody">
+<tr>
+<td scope="row">Newborn</td>
+<td>0–3 months</td>
+<td>14–17 hours (National Sleep Foundation)<sup>1</sup><br /> No recommendation (American Academy of Sleep Medicine)<sup>2</sup></td>
+</tr>
+<tr>
+<td scope="row">Infant</td>
+<td>4–12 months</td>
+<td>12–16 hours per 24 hours (including naps)<sup>2</sup></td>
+</tr>
+<tr>
+<td scope="row">Toddler</td>
+<td>1–2 years</td>
+<td>11–14 hours per 24 hours (including naps)<sup>2</sup></td>
+</tr>
+<tr>
+<td scope="row">Preschool</td>
+<td>3–5 years</td>
+<td>10–13 hours per 24 hours (including naps)<sup>2</sup></td>
+</tr>
+<tr>
+<td scope="row">School Age</td>
+<td>6–12 years</td>
+<td>9–12 hours per 24 hours<sup>2</sup></td>
+</tr>
+<tr>
+<td scope="row">Teen</td>
+<td>13–18 years</td>
+<td>8–10 hours per 24 hours<sup>2</sup></td>
+</tr>
+<tr>
+<td scope="row">Adult</td>
+<td>18–60 years</td>
+<td>7 or more hours per night<sup>3</sup></td>
+</tr>
+<tr>
+<td scope="row"> </td>
+<td>61–64 years</td>
+<td>7–9 hours<sup>1</sup></td>
+</tr>
+<tr>
+<td scope="row"> </td>
+<td>65 years and older</td>
+<td>7–8 hours<sup>1</sup></td>
+</tr>
+        </tbody>
+    </table>
+    <p>References:</p>
+    <ol>
+        <li style="text-align: left;">Hirshkowitz M, Whiton K, Albert SM, Alessi C, Bruni O, et al. The National Sleep Foundation’s sleep time duration recommendations: methodology and results summary. <em>Sleep Health</em>. 2015;1(1):40–43.</li>
+        <li style="text-align: left;">Paruthi S, Brooks LJ, D’Ambrosio C, Hall WA, Kotagal S, Lloyd RM, et al. Recommended amount of sleep for pediatric populations: a consensus statement of the American Academy of Sleep Medicine. <em>J Clin Sleep Med.</em> 2016;12(6):785–786.</li>
+        <li style="text-align: left;">Watson NF, Badr MS, Belenky G, et al. Recommended amount of sleep for a healthy adult: a joint consensus statement of the American Academy of Sleep Medicine and Sleep Research Society. <em>Sleep</em>. 2015;38(6):843–844.</li>
+    </ol>
+
+	<script src="script.js">
+	</script>
+</body>
+
+</html>
